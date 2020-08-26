@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -14,10 +15,10 @@ public class Utama extends AppCompatActivity {
     CardView nilai,hsl,ttg,profile;
     ImageView menilai,hasil,info,profil;
 
-    protected void OnCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_utama);
-
 
         nilai.findViewById(R.id.menilai);
         menilai.setOnClickListener(new View.OnClickListener() {
@@ -57,3 +58,4 @@ public class Utama extends AppCompatActivity {
 
     }
 }
+

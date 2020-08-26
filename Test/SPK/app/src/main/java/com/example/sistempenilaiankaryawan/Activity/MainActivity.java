@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.sistempenilaiankaryawan.R;
 
 public class MainActivity extends AppCompatActivity {
-    private int load=4000;
+    private int load=3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

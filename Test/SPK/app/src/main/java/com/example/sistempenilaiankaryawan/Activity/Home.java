@@ -8,25 +8,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.sistempenilaiankaryawan.R;
 
 public class Home extends AppCompatActivity {
     EditText edtemail,edtpss;
-    Button btnlogin;
+    ImageButton btnlogin;
     SharedPreferencesLogin Share;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
         edtemail = (EditText) findViewById(R.id.edtemail);
         edtpss = (EditText) findViewById(R.id.edtpss);
 
         Share = SharedPreferencesLogin.getInstance(getApplicationContext());
 
-        btnlogin = (Button) findViewById(R.id.btnlogin);
+        btnlogin = (ImageButton) findViewById(R.id.btnlogin);
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
