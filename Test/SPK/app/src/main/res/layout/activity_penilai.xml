@@ -23,9 +23,10 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/iv_nilai"
-                android:layout_width="123dp"
-                android:layout_height="127dp"
+                android:id="@+id/iv_img1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="20dp"
                 android:src="@drawable/jww" />
 
             <TextView
@@ -33,8 +34,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="JEON WONWOO WONU"
-                android:textColor="@android:color/white"
+                android:layout_marginLeft="30dp"
+                android:text="IAN SYAUQI AL-HAQ"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
                 android:textSize="18dp" />
 
         </LinearLayout>
@@ -57,19 +60,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <TextView
                         android:id="@+id/tv_tj"
                         android:gravity="center"
                         android:layout_width="wrap_content"
                         android:textColor="@android:color/white"
                         android:textSize="18dp"
+                        android:layout_marginRight="10dp"
                         android:layout_height="wrap_content"
                         android:text="Tanggung Jawab" />
+
                     <TextView
                         android:id="@+id/tv_k"
                         android:layout_width="wrap_content"
                         android:textColor="@android:color/white"
                         android:textSize="18dp"
+                        android:layout_marginRight="30dp"
                         android:layout_height="wrap_content"
                         android:text="Kedisiplinan" />
                     <TextView
@@ -77,6 +84,7 @@
                         android:layout_width="wrap_content"
                         android:textColor="@android:color/white"
                         android:textSize="18dp"
+                        android:layout_marginRight="43dp"
                         android:layout_height="wrap_content"
                         android:text="Kerapian" />
                     <TextView
@@ -84,9 +92,9 @@
                         android:layout_width="wrap_content"
                         android:textColor="@android:color/white"
                         android:textSize="18dp"
+                        android:layout_marginRight="33dp"
                         android:layout_height="wrap_content"
                         android:text="Komunikasi" />
-
 
                 </LinearLayout>
 
@@ -102,6 +110,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:max="5"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="50dp"
                         android:numStars="5"
                         android:rating="0" />
 
@@ -110,6 +121,8 @@
                         style="@style/customRatingBar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginBottom="8dp"
                         android:max="5"
                         android:numStars="5"
                         android:rating="0" />
@@ -119,6 +132,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:max="5"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="50dp"
                         android:numStars="5"
                         android:rating="0" />
 
@@ -127,6 +142,7 @@
                         style="@style/customRatingBar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
                         android:max="5"
                         android:numStars="5"
                         android:rating="0" />

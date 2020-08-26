@@ -10,18 +10,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".profile"></activity>
-        <activity android:name=".inpo" />
-        <activity android:name=".Utama" />
-        <activity android:name=".hasilnya" />
-        <activity android:name=".penilai" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.profile"></activity>
+        <activity android:name=".Activity.inpo" />
+        <activity android:name=".Activity.Utama" />
+        <activity android:name=".Activity.hasilnya" />
+        <activity android:name=".Activity.penilai" />
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Home"/>
+        <activity android:name=".Activity.Home"/>
 
     </application>
 

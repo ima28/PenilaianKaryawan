@@ -1,4 +1,4 @@
-package com.example.sistempenilaiankaryawan;
+package com.example.sistempenilaiankaryawan.Activity;
 
 
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.sistempenilaiankaryawan.R;
 
 public class MainActivity extends AppCompatActivity {
     private int load=4000;

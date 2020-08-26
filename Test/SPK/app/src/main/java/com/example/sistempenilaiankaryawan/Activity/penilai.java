@@ -1,14 +1,16 @@
-package com.example.sistempenilaiankaryawan;
+package com.example.sistempenilaiankaryawan.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class hasilnya extends AppCompatActivity {
+import com.example.sistempenilaiankaryawan.R;
+
+public class penilai extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hasilnya);
+        setContentView(R.layout.activity_penilai);
     }
 }

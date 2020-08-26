@@ -1,20 +1,25 @@
-package com.example.sistempenilaiankaryawan;
+package com.example.sistempenilaiankaryawan.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+
+import com.example.sistempenilaiankaryawan.R;
 
 public class Utama extends AppCompatActivity {
-    ImageButton menilai,hasil,info,profil;
+    CardView nilai,hsl,ttg,profile;
+    ImageView menilai,hasil,info,profil;
 
     protected void OnCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_utama);
 
-        menilai=(ImageButton)findViewById(R.id.menilai);
+
+        nilai.findViewById(R.id.menilai);
         menilai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -23,7 +28,7 @@ public class Utama extends AppCompatActivity {
             }
         });
 
-        hasil=(ImageButton)findViewById(R.id.hasil);
+        hsl.findViewById(R.id.hasilnya);
         hasil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,7 +37,7 @@ public class Utama extends AppCompatActivity {
             }
         });
 
-        info=(ImageButton)findViewById(R.id.info);
+        ttg.findViewById(R.id.info);
         info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,11 +46,11 @@ public class Utama extends AppCompatActivity {
             }
         });
 
-        profil=(ImageButton)findViewById(R.id.profil);
+        profile.findViewById(R.id.profil);
         profil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent profilee = new Intent(Utama.this, profile.class);
+                Intent profilee = new Intent(Utama.this, com.example.sistempenilaiankaryawan.Activity.profile.class);
                 startActivity(profilee);
             }
         });

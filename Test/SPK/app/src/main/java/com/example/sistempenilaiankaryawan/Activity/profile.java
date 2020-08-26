@@ -1,8 +1,10 @@
-package com.example.sistempenilaiankaryawan;
+package com.example.sistempenilaiankaryawan.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.sistempenilaiankaryawan.R;
 
 public class profile extends AppCompatActivity {
 
