@@ -8,6 +8,9 @@ public class SharedPreferencesLogin {
     private static SharedPreferencesLogin INSTANCE;
     private SharedPreferences sharedPreferences;
 
+    public  static final String Sudah_Login= "sudahLogin";
+    private SharedPreferences.Editor edi;
+
     private SharedPreferencesLogin(Context context) {
         sharedPreferences = context.getApplicationContext().getSharedPreferences("simple.android.app", Context.MODE_PRIVATE);
     }
@@ -35,5 +38,13 @@ public class SharedPreferencesLogin {
     public void setPass(String isPass) {
         sharedPreferences.edit().putString("isPass", isPass).apply();
     }
-    public String getPass(){return  sharedPreferences.getString("isPass",""); }
+
+    public boolean getsudahLogin() {
+            return sharedPreferences.getBoolean(Sudah_Login,false);
+        }
+
+    public void setsudahLogin(String keySP, boolean b) {
+        edi.putBoolean(keySP,b);
+        edi.commit();
+    }
 }

@@ -1,11 +1,11 @@
 package com.example.sistempenilaiankaryawan.Model;
 
-public class nilai {
+public class Nilai {
 
     public String Email;
     public String Pass;
 
-    public nilai (String email, String pass) {
+    public Nilai(String email, String pass) {
         this.Email = Email;
         this.Pass = Pass;
     }

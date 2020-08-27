@@ -9,51 +9,48 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.sistempenilaiankaryawan.Model.Nilai;
 import com.example.sistempenilaiankaryawan.R;
 
 import java.util.List;
 
-public class AdapterPenilai extends RecyclerView.Adapter<AdapterPenilai.AdapPenilaiChild> {
-    private List<AdapterPenilai> adapterPenilaiList;
+public class AdapterPenilai extends RecyclerView.Adapter<AdapterPenilai.AdapterPenilaiChild> {
+    private List<Nilai> nilaiList;
     private Context context;
-    private Object AdapPenilaiChild;
-    private Object email,password;
-
-    public AdapterPenilai(List<AdapterPenilai> adapterPenilaiList, Context context){
-        this.adapterPenilaiList = adapterPenilaiList;
+    public AdapterPenilai(List<Nilai> nilaiList, Context context){
+        this.nilaiList = nilaiList;
         this.context=context;
+
     }
 
     @NonNull
     @Override
-    public AdapterPenilai.AdapPenilaiChild onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public AdapterPenilaiChild onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.penilaian,null);
-        AdapPenilaiChild adapPenilaiChild =new AdapPenilaiChild(view);
-        return (AdapterPenilai.AdapPenilaiChild) AdapPenilaiChild;
+        AdapterPenilaiChild adapterPenilaiChild = new AdapterPenilaiChild(view);
+        return adapterPenilaiChild;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AdapterPenilai.AdapPenilaiChild holder, int position) {
-        holder.textViewemail.setText((Integer) adapterPenilaiList.get(position).email);
-        holder.textViewpass.setText((Integer) adapterPenilaiList.get(position).password);
+    public void onBindViewHolder(@NonNull AdapterPenilaiChild holder, int position) {
+        holder.textView1.setText(nilaiList.get(position).Email);
+        holder.textView2.setText(nilaiList.get(position).Pass);
     }
 
     @Override
     public int getItemCount() {
-        return adapterPenilaiList.size();
+        return nilaiList.size();
     }
 
-    public class AdapPenilaiChild extends RecyclerView.ViewHolder {
-        public TextView textViewemail, textViewpass;
 
-        public AdapPenilaiChild(@NonNull View itemView){
+    public class AdapterPenilaiChild extends RecyclerView.ViewHolder {
+        public TextView textView1, textView2;
+
+        public AdapterPenilaiChild(@NonNull View itemView) {
             super(itemView);
 
-            textViewemail=itemView.findViewById(R.id.edtemail);
-            textViewpass=itemView.findViewById(R.id.edtpss);
-        }
-
-        {
+            textView1=itemView.findViewById(R.id.edtemail);
+            textView2=itemView.findViewById(R.id.edtpss);
         }
     }
 }
