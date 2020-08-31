@@ -7,20 +7,23 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.sistempenilaiankaryawan.Activity.SharedPreferencesLogin;
 import com.example.sistempenilaiankaryawan.R;
 
 import static androidx.core.content.ContextCompat.startActivity;
 
-public class UserLogin extend AppCompatActivity {
+public class UserLogin extends AppCompatActivity {
     private EditText edtemail, edtpass;
     private Button btnlogin;
     private SharedPreferencesLogin sharedPreferencesLogin;
+    private int setContentView;
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView *=(R.layout.activity_home);
+        setContentView =(R.layout.activity_home);
         edtemail.findViewById(R.id.edtemail);
         edtpass.findViewById(R.id.edtpss);
         btnlogin.findViewById(R.id.btnlogin);
@@ -46,7 +49,7 @@ public class UserLogin extend AppCompatActivity {
                         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK));
                 finish();
             }
-        }:
+    });
+}
 
-    }
 }

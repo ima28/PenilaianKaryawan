@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.sistempenilaiankaryawan.Model.Login;
 import com.example.sistempenilaiankaryawan.Model.Nilai;
 import com.example.sistempenilaiankaryawan.R;
 
@@ -33,8 +34,10 @@ public class AdapterPenilai extends RecyclerView.Adapter<AdapterPenilai.AdapterP
 
     @Override
     public void onBindViewHolder(@NonNull AdapterPenilaiChild holder, int position) {
-        holder.textView1.setText(nilaiList.get(position).Email);
-        holder.textView2.setText(nilaiList.get(position).Pass);
+        holder.textView1.setText(nilaiList.get(position).TanggungJawab);
+        holder.textView2.setText(nilaiList.get(position).Kedisiplinan);
+        holder.textView3.setText(nilaiList.get(position).Kerapian);
+        holder.textView4.setText(nilaiList.get(position).Komunikasi);
     }
 
     @Override
@@ -44,13 +47,16 @@ public class AdapterPenilai extends RecyclerView.Adapter<AdapterPenilai.AdapterP
 
 
     public class AdapterPenilaiChild extends RecyclerView.ViewHolder {
-        public TextView textView1, textView2;
+        public TextView textView1, textView2, textView3, textView4;
 
         public AdapterPenilaiChild(@NonNull View itemView) {
             super(itemView);
 
-            textView1=itemView.findViewById(R.id.edtemail);
-            textView2=itemView.findViewById(R.id.edtpss);
+            textView1=itemView.findViewById(R.id.tv_tj);
+            textView2=itemView.findViewById(R.id.tv_k);
+            textView3=itemView.findViewById(R.id.tv_ke);
+            textView4=itemView.findViewById(R.id.tv_ko);
+
         }
     }
 }

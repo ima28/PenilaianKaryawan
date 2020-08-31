@@ -1,28 +1,53 @@
 package com.example.sistempenilaiankaryawan.Model;
 
 public class Nilai {
+    public int TanggungJawab;
+    public int Kedisiplinan;
+    public int Kerapian;
+    public int Komunikasi;
 
-    public String Email;
-    public String Pass;
-
-    public Nilai(String email, String pass) {
-        this.Email = Email;
-        this.Pass = Pass;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getNama() {
-        return Email;
+    private int id;
+
+
+    private int nama;
+    private String gambar;
+    private int rating;
+
+    public Nilai(int nama, String gambar, int rating) {
+        this.nama = nama;
+        this.gambar = gambar;
+        this.rating = rating;
     }
 
-    public void setNama(String email) {
-        this.Email = email;
+    public Nilai(String nama) {
     }
 
-    public String getPassword() {
-        return Pass;
+    public int getNama() {
+        return nama;
     }
 
-    public void setPassword(String password) {
-        this.Pass = password;
+    public void setNama(int nama) {
+        this.nama = nama;
     }
+
+    public String getGambar() {
+        return gambar;
+    }
+
+    public void setGambar(String gambar) {
+        this.gambar = gambar;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
 }

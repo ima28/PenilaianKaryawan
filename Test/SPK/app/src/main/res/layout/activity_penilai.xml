@@ -24,7 +24,7 @@
             android:text="PENILAIAN KINERJA"
             android:textColor="@android:color/black"
             android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="25dp" />
 
         <LinearLayout
             android:layout_weight="1"
