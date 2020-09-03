@@ -9,7 +9,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.sistempenilaiankaryawan.Model.Login;
 import com.example.sistempenilaiankaryawan.Model.Nilai;
 import com.example.sistempenilaiankaryawan.R;
 

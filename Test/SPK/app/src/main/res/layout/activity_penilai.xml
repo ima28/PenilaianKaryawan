@@ -8,6 +8,7 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/nilai"
         android:gravity="center"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"

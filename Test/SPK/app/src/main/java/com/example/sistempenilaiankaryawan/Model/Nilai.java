@@ -12,7 +12,6 @@ public class Nilai {
 
     private int id;
 
-
     private int nama;
     private String gambar;
     private int rating;

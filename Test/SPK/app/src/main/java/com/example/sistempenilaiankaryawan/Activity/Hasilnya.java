@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.sistempenilaiankaryawan.R;
 
-public class penilai extends AppCompatActivity {
+public class Hasilnya extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_penilai);
+        setContentView(R.layout.activity_hasilnya);
     }
 }

@@ -45,7 +45,7 @@
         android:textAlignment="center"
         android:layout_alignParentEnd="true"/>
 
-    <ImageButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LOGIN"
@@ -53,8 +53,7 @@
         android:theme="@style/buttonstyle1"
         android:textStyle="bold"
         android:id="@+id/btnlogin"
-        android:src="@drawable/login"
-        android:backgroundTint="@color/ijo"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="400dp"/>
 
