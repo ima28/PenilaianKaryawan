@@ -41,7 +41,7 @@
                 android:layout_width="110dp"
                 android:layout_height="110dp"
                 android:layout_marginLeft="20dp"
-                android:src="@drawable/cowo" />
+                android:src="@drawable/jww" />
 
             <TextView
                 android:id="@+id/tv_nama"

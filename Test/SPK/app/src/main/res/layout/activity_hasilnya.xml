@@ -42,16 +42,18 @@
                 android:layout_width="252dp"
                 android:layout_height="160dp"
                 android:layout_gravity="center"
-                android:src="@drawable/cowo" />
+                android:src="@drawable/jww" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ian Syauqi Al-Haq"
+                android:text="IAN SYAUQI AL-HAQ"
                 android:layout_gravity="center"
                 android:textStyle="bold"
                 android:textSize="20dp"
-                android:paddingLeft="225dp" />
+                android:paddingLeft="85dp"
+                android:textColor="@android:color/black"
+                android:paddingTop="20dp"/>
         </LinearLayout>
     </RelativeLayout>
 
@@ -61,6 +63,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="0dp"
+        android:paddingTop="40dp"
         android:layout_marginBottom="100dp">
 
         <LinearLayout

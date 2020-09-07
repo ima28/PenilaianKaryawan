@@ -31,12 +31,13 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ian Syauqi Al-Haq"
+                    android:text="IAN SYAUQI AL-HAQ"
                     android:layout_gravity="center"
                     android:paddingTop="10dp"
                     android:textStyle="bold"
                     android:textSize="20dp"
-                    android:paddingLeft="100dp" />
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="110dp" />
             </LinearLayout>
         </RelativeLayout>
 
@@ -73,7 +74,7 @@
                         android:layout_weight="2"
                         android:layout_margin="15dp"
                         android:layout_gravity="center"
-                        android:paddingLeft="80dp"
+                        android:paddingLeft="50dp"
                         android:src="@drawable/menilai" />
 
                     <TextView
@@ -81,8 +82,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Penilaian Kinerja"
-                        android:textStyle="bold"
-                        android:paddingLeft="70dp"
+                        android:paddingLeft="55dp"
                         android:textColor="@color/black"
                         android:textSize="30dp" />
 
@@ -111,17 +111,16 @@
                         android:layout_weight="2"
                         android:layout_margin="15dp"
                         android:layout_gravity="left"
-                        android:paddingLeft="100dp"
+                        android:paddingLeft="80dp"
                         android:src="@drawable/hasil"/>
 
                     <TextView android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Hasil Penilaian Kinerja"
-                        android:textStyle="bold"
                         android:textColor="@color/black"
                         android:textSize="30dp"
-                        android:paddingLeft="30dp"/>
+                        android:paddingLeft="20dp"/>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

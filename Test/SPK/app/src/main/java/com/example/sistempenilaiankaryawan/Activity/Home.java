@@ -27,7 +27,7 @@ public class Home extends AppCompatActivity {
         sharedPreferencesLogin = new SharedPreferencesLogin(Home.this);
 
         btnlogin = (Button) findViewById(R.id.btnlogin);
-        /*
+
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,22 +38,12 @@ public class Home extends AppCompatActivity {
                 sharedPreferencesLogin.setpasswod(sharedPreferencesLogin.Pass, Pass);
                 sharedPreferencesLogin.setsudahLogin(sharedPreferencesLogin.Sudah_Login, true);
 
-               // startActivity(new Intent(Home.this, Menutest.class));
-               // finish();
+               startActivity(new Intent(Home.this, Utama.class));
+               finish();
 
-                //.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
+                //addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
 
 
-            }
-        });
-
-         */
-
-        btnlogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Home.this, Menutest.class);
-                startActivity(intent);
             }
         });
 
